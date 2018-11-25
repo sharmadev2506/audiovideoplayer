@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar_video"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:paddingBottom="@dimen/dp_6"
+    android:paddingTop="@dimen/dp_6"
+    tools:ignore="ContentDescription,MissingPrefix">
+
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_nav_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingLeft="@dimen/dp_6"
+        android:paddingRight="@dimen/dp_6"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        android:tint="@android:color/black" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_video_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/sp_16" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_vide_sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="hjshdj"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/sp_13" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    defaultConfig {
+        applicationId "com.musicandvideoplayer"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "com.android.support:appcompat-v7:$rootProject.ext.appcompat_support"
+    implementation "com.android.support:support-v4:$rootProject.ext.appcompat_support"
+    implementation "com.android.support:design:$rootProject.ext.appcompat_support"
+    implementation project(path: ':audiovideoplayer')
+    implementation 'com.github.bumptech.glide:glide:3.8.0'
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation 'com.google.android.exoplayer:exoplayer:2.6.0'
+    implementation 'ch.acra:acra:4.9.0'
+}

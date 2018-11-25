@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">musicandvideoplayer</string>
+    <string name="play_audio">Play Audio</string>
+    <string name="play_video">Play Video</string>
+    <string name="title_home">Home</string>
+    <string name="home">Home</string>
+    <string name="browse">Browse</string>
+    <string name="search">Search</string>
+    <string name="my_music">My Music</string>
+    <string name="crash_toast_text">App Crashed, please send this mail to the provided email.\\\"</string>
+    <string name="no_network">No Internet Connection</string>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+    <item android:id="@android:id/background">
+        <shape android:shape="rectangle">
+            <corners android:radius="20dp"/>
+            <solid android:color="@color/color_premium_light_black" />
+
+        </shape>
+    </item>
+
+    <item>
+        <clip>
+            <bitmap
+                android:autoMirrored="true"
+                android:src="@drawable/ic_videoplayback_progressbar" />
+        </clip>
+    </item>
+
+
+</layer-list>
+
