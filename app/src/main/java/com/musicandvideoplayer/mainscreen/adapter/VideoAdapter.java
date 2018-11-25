@@ -25,7 +25,7 @@ public class VideoAdapter extends RecyclerView.Adapter<VideoAdapter.ViewHolder> 
     private ArrayList<AudioVideoBean> arrayList;
     private RecyclerOnClick recyclerOnClick;
 
-    VideoAdapter(ArrayList<AudioVideoBean> audioBeanArrayList, RecyclerOnClick recyclerOnClick) {
+    public VideoAdapter(ArrayList<AudioVideoBean> audioBeanArrayList, RecyclerOnClick recyclerOnClick) {
         this.arrayList = audioBeanArrayList;
         this.recyclerOnClick = recyclerOnClick;
     }
