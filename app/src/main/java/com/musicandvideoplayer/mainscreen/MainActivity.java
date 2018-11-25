@@ -277,8 +277,8 @@ public class MainActivity extends AppCompatActivity implements RecyclerOnClick, 
 
                     }
                     if (slideOffset > 0) {
-                        exoVideoPlayer.getLayoutParams().height = 500;
-                        frameVideo.getLayoutParams().height = 500;
+                        exoVideoPlayer.getLayoutParams().height = 800;
+                        frameVideo.getLayoutParams().height = 800;
                         animateViewVisibility(relMenu, View.GONE);
                     }
 
@@ -645,8 +645,8 @@ public class MainActivity extends AppCompatActivity implements RecyclerOnClick, 
     private void doPotrait() {
         isLandscape = false;
         getWindow().clearFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        exoVideoPlayer.getLayoutParams().height = 500;
-        frameVideo.getLayoutParams().height = 500;
+        exoVideoPlayer.getLayoutParams().height = 800;
+        frameVideo.getLayoutParams().height = 800;
         llmBottomBar.setVisibility(View.VISIBLE);
     }
 

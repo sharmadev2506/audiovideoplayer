@@ -362,7 +362,9 @@ public class PlayerManager implements ServiceCallbacks {
         {
             player.seekTo(player.getCurrentWindowIndex() - 1,0);
             PlayList playList=arrayList.get(player.getCurrentWindowIndex());
-            myService.loadNotification(playList.getTitle(),playList.getAlbum(),playList.getImagUrl());
+            if(myService!=null) {
+                myService.loadNotification(playList.getTitle(), playList.getAlbum(), playList.getImagUrl());
+            }
         }
     }
 
